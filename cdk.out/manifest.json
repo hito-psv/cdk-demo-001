@@ -1,0 +1,445 @@
+{
+  "version": "5.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "LambdaSampleStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "LambdaSampleStack.template.json"
+      },
+      "metadata": {
+        "/LambdaSampleStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.b9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226",
+              "id": "b9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226",
+              "packaging": "zip",
+              "sourceHash": "b9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226",
+              "s3BucketParameter": "AssetParametersb9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226S3BucketB09C9CDC",
+              "s3KeyParameter": "AssetParametersb9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226S3VersionKey58376D4B",
+              "artifactHashParameter": "AssetParametersb9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226ArtifactHashBF1D599C"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/construct-compat.js:310:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:130:29)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:58:25)",
+              "Stack.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack.js:358:33)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:62:31)",
+              "new Asset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:36:44)",
+              "AssetCode.bind (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/code.js:137:26)",
+              "new Function (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/function.js:80:33)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/backend/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceRole77A15DC8",
+            "trace": [
+              "new Role (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-iam/lib/role.js:42:22)",
+              "new Function (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/function.js:62:35)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/backend/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendServiceRoleDefaultPolicy78BAA8F9",
+            "trace": [
+              "new Policy (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-iam/lib/policy.js:31:26)",
+              "Role.addToPrincipalPolicy (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-iam/lib/role.js:164:34)",
+              "Function.addToPrincipal (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-iam/lib/grant.js:69:65)",
+              "Table.combinedGrant (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:246:35)",
+              "Table.grantWriteData (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:141:21)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7746:51",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7746:25",
+              "Kernel._ensureSync (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8371:20)",
+              "Kernel.invoke (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7745:26)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/backend/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendCBA98286",
+            "trace": [
+              "new Function (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/function.js:106:26)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/AssetParameters/b9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersb9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226S3BucketB09C9CDC",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:120:22)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:58:25)",
+              "Stack.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack.js:358:33)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:62:31)",
+              "new Asset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:36:44)",
+              "AssetCode.bind (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/code.js:137:26)",
+              "new Function (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/function.js:80:33)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/AssetParameters/b9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersb9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226S3VersionKey58376D4B",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:120:22)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:58:25)",
+              "Stack.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack.js:358:33)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:62:31)",
+              "new Asset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:36:44)",
+              "AssetCode.bind (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/code.js:137:26)",
+              "new Function (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/function.js:80:33)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/AssetParameters/b9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersb9d168908db593714198e01540eb08c015540d19881e7e2b8f58191486447226ArtifactHashBF1D599C",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:120:22)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:58:25)",
+              "Stack.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack.js:358:33)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:62:31)",
+              "new Asset (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:36:44)",
+              "AssetCode.bind (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/code.js:137:26)",
+              "new Function (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/function.js:80:33)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/SampleLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleLambdaB2FF4FA1",
+            "trace": [
+              "new RestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:204:26)",
+              "new LambdaRestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:18:9)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/SampleLambda/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleLambdaCloudWatchRole594B84E2",
+            "trace": [
+              "new Role (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-iam/lib/role.js:42:22)",
+              "LambdaRestApi.configureCloudWatchRole (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:114:22)",
+              "new RestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:220:18)",
+              "new LambdaRestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:18:9)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/SampleLambda/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleLambdaAccount445E9D14",
+            "trace": [
+              "LambdaRestApi.configureCloudWatchRole (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:118:26)",
+              "new RestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:220:18)",
+              "new LambdaRestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:18:9)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/SampleLambda/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleLambdaDeploymentE755284304a4b8eddbe867db6f8d8c93f6fcc63e",
+            "trace": [
+              "new Deployment (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/deployment.js:41:25)",
+              "LambdaRestApi.configureDeployment (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:126:38)",
+              "new RestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:222:14)",
+              "new LambdaRestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:18:9)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/SampleLambda/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleLambdaDeploymentStageprod54C097A5",
+            "trace": [
+              "new Stage (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/stage.js:48:26)",
+              "LambdaRestApi.configureDeployment (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:134:36)",
+              "new RestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:222:14)",
+              "new LambdaRestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:18:9)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/SampleLambda/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleLambdaEndpoint9FAA5D96",
+            "trace": [
+              "LambdaRestApi.configureDeployment (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:138:13)",
+              "new RestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:222:14)",
+              "new LambdaRestApi (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:18:9)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/SampleLambda/Default/ddb/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleLambdaddb3A6B768E",
+            "trace": [
+              "new Resource (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:174:26)",
+              "RootResource.addResource (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7746:51",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7746:25",
+              "Kernel._ensureSync (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8371:20)",
+              "Kernel.invoke (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7745:26)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/SampleLambda/Default/ddb/POST/ApiPermission.LambdaSampleStackSampleLambdaE19E2271.POST..ddb": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleLambdaddbPOSTApiPermissionLambdaSampleStackSampleLambdaE19E2271POSTddbEB04B66F",
+            "trace": [
+              "Function.addPermission (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:24:9)",
+              "LambdaIntegration.bind (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:33:22)",
+              "new Method (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/method.js:33:40)",
+              "Resource.addMethod (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:18:16)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7746:51",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7746:25",
+              "Kernel._ensureSync (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8371:20)",
+              "Kernel.invoke (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7745:26)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/SampleLambda/Default/ddb/POST/ApiPermission.Test.LambdaSampleStackSampleLambdaE19E2271.POST..ddb": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleLambdaddbPOSTApiPermissionTestLambdaSampleStackSampleLambdaE19E2271POSTddb555E5335",
+            "trace": [
+              "Function.addPermission (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:24:9)",
+              "LambdaIntegration.bind (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:40:26)",
+              "new Method (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/method.js:33:40)",
+              "Resource.addMethod (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:18:16)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7746:51",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7746:25",
+              "Kernel._ensureSync (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8371:20)",
+              "Kernel.invoke (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7745:26)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/SampleLambda/Default/ddb/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleLambdaddbPOSTAAA2A81B",
+            "trace": [
+              "new Method (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/method.js:49:26)",
+              "Resource.addMethod (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:18:16)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7746:51",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7746:25",
+              "Kernel._ensureSync (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8371:20)",
+              "Kernel.invoke (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7745:26)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/ItemsTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": "Demo",
+            "trace": [
+              "ConstructNode.addMetadata (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/core/lib/construct-compat.js:310:62)",
+              "new Table (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:325:23)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/LambdaSampleStack/ItemsTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ItemsTable5AAC2C46",
+            "trace": [
+              "new Table (/private/var/folders/4j/cmkvqm6s24g206qrnrg34c1wk5kkbf/T/jsii-kernel-5oapRw/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:306:22)",
+              "/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:49",
+              "Kernel._wrapSandboxCode (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8395:20)",
+              "Kernel._create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7922:26)",
+              "Kernel.create (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7666:21)",
+              "KernelHost.processRequest (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7446:28)",
+              "KernelHost.run (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7384:14)",
+              "Immediate._onImmediate (/Users/hirtsuru/cdk/.env/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7387:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cloud-assembly-schema": "1.56.0",
+      "@aws-cdk/cx-api": "1.56.0",
+      "@aws-cdk/core": "1.56.0",
+      "@aws-cdk/assets": "1.56.0",
+      "@aws-cdk/region-info": "1.56.0",
+      "@aws-cdk/aws-iam": "1.56.0",
+      "@aws-cdk/aws-cloudwatch": "1.56.0",
+      "@aws-cdk/aws-codeguruprofiler": "1.56.0",
+      "@aws-cdk/aws-kms": "1.56.0",
+      "@aws-cdk/aws-logs": "1.56.0",
+      "@aws-cdk/aws-events": "1.56.0",
+      "@aws-cdk/aws-s3": "1.56.0",
+      "@aws-cdk/aws-ssm": "1.56.0",
+      "@aws-cdk/aws-ec2": "1.56.0",
+      "@aws-cdk/aws-efs": "1.56.0",
+      "@aws-cdk/aws-s3-assets": "1.56.0",
+      "@aws-cdk/aws-sqs": "1.56.0",
+      "@aws-cdk/aws-lambda": "1.56.0",
+      "@aws-cdk/aws-route53": "1.56.0",
+      "@aws-cdk/aws-certificatemanager": "1.56.0",
+      "@aws-cdk/aws-elasticloadbalancingv2": "1.56.0",
+      "@aws-cdk/aws-apigateway": "1.56.0",
+      "@aws-cdk/aws-autoscaling-common": "1.56.0",
+      "@aws-cdk/aws-applicationautoscaling": "1.56.0",
+      "@aws-cdk/aws-sns": "1.56.0",
+      "@aws-cdk/aws-cloudformation": "1.56.0",
+      "@aws-cdk/custom-resources": "1.56.0",
+      "@aws-cdk/aws-dynamodb": "1.56.0",
+      "jsii-runtime": "Python/3.8.5"
+    }
+  }
+}
